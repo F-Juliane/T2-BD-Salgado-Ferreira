@@ -31,7 +31,7 @@ jobs:
 
     steps:
       - name: Checkout repository and build Docker image
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         # Necessary to build it locally for boca-web and boca-jail
         #run: docker build -t boca-base . -f docker/dev/base/Dockerfile
 
