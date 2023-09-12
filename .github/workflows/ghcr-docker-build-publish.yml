@@ -49,19 +49,19 @@ jobs:
       # https://github.com/docker/metadata-action
       - name: Extract Docker metadata (boca-base)
         id: meta_base
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY_HOST }}/${{ env.IMAGE_NAME }}/boca-base
 
       - name: Extract Docker metadata (boca-web)
         id: meta_web
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY_HOST }}/${{ env.IMAGE_NAME }}/boca-web
 
       - name: Extract Docker metadata (boca-jail)
         id: meta_jail
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY_HOST }}/${{ env.IMAGE_NAME }}/boca-jail
 
